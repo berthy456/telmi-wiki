@@ -339,11 +339,11 @@ Une demande d'autorisation est demandée pour poursuivre.
 
 ![](assets/deno_02.png)
 
-Si le déploiement réussis, vous devriez avoir un service accessible sur un domaine comme par exemple : https://telmi-store-en.deno.dev , mais également un fichier `deno.json` créé par le déploiement.
+Si le déploiement réussis, vous devriez avoir un service accessible sur un domaine comme par exemple : `https://telmi-store-en.deno.dev` , mais également un fichier `deno.json` créé par le déploiement.
 
 ![](assets/deno_03.png)
 
-Finalement, RDV sur [https://dash.deno.com/projects/telmi-store-en/cron](https://dash.deno.com/projects/telmi-store-en/cron) pour visualiser l'état de l'exécution du script par CRON. Le statut "Last Run" doit indiquer "Succeeded".
+Finalement, RDV sur [https://dash.deno.com](https://dash.deno.com) pour visualiser l'état de l'exécution du script par CRON. Le statut "Last Run" doit indiquer "Succeeded".
 
 ## Création d'un premier pack d'histoire
 
