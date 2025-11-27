@@ -3,6 +3,7 @@
 Cette documentation explique en détail comment mettre en production un store Telmi pour héberger des packs d'histoire dans une langue étrangère précise.
 
 Elle s'adresse donc à vous si :
+
 * Vous êtes bilingue.
 * Vous avez la volonté de gérer un store Telmi officiel dans une langue étrangère.
 * Vous possédez un compte Github et vous savez comment l'utiliser.
@@ -15,7 +16,7 @@ Un store Telmi est basiquement un fichier JSON qui est appelé sur le logiciel T
 
 ## La langue
 
-Pour commencer, identifiez le code ISO 639-1 du pays concerné par votre langue : https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1
+Pour commencer, identifiez le code [ISO 639-1](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) du pays concerné par votre langue.
 Par exemple "FR", pour la France.
 
 > ⚠️ Dans la suite de cette documentation, c'est le code "EN" qui sera pris en exemple, remplacez donc **systématiquement** ce dernier par votre propre code pays ⚠️
@@ -35,14 +36,14 @@ Vous pouvez également ajouter quelques éminents membres de la communauté Telm
 
 Commencez à personaliser l'organisation : 
 
-* Nom : ``Telmi Store EN``
+* Nom : `Telmi Store EN`
 * Une description traduite dans votre langue
-* Le lien vers https://telmi.fr
+* Le lien vers `https://telmi.fr`
 * Une icône personnalisée avec le drapeau de votre langue, vous pouvez utiliser [ce template XCF](assets/telmi-icon-flag.xcf) avec [GIMP](https://www.gimp.org) si besoin pour créer votre icône.
 
 ![](assets/github_04.png)
 
-Votre organisation est prête, il est temps d'initialiser le premier dépôt ``.github``, c'est un dépôt de configuration spécial.
+Votre organisation est prête, il est temps d'initialiser le premier dépôt `.github`, c'est un dépôt de configuration spécial.
 
 ![](assets/github_05.png)
 
@@ -52,9 +53,9 @@ Ajoutez ce dernier en accès public.
 
 Ce store doit être initialisé avec quelques fichiers, dossier et surtout la bannière traduite dans votre langue. Pour faire ceci, reprenez la structure des dépôts existants, par exemple : 
 
-- https://github.com/telmi-store/.github/archive/refs/heads/main.zip
-- https://github.com/telmi-store-en/.github/archive/refs/heads/main.zip
-- https://github.com/telmi-store-cn/.github/archive/refs/heads/main.zip
+- [https://github.com/telmi-store/.github/archive/refs/heads/main.zip](https://github.com/telmi-store/.github/archive/refs/heads/main.zip)
+- [https://github.com/telmi-store-en/.github/archive/refs/heads/main.zip](https://github.com/telmi-store-en/.github/archive/refs/heads/main.zip)
+- [https://github.com/telmi-store-cn/.github/archive/refs/heads/main.zip](https://github.com/telmi-store-cn/.github/archive/refs/heads/main.zip)
 
 etc ...
 
@@ -86,7 +87,7 @@ Une fois votre dépôt ``.github`` prêt, nous pouvons passer à la mise en plac
 
 ## Mise en place d'un GIST
 
-Github GIST est la fonctionnalité qui rendra votre fichier JSON visible publiquement. Rendez-vous sur https://gist.github.com pour commencer à le créer en cliquant sur **Create secret gist**. Nommez-le `telmi-store-en`. Ajouter un simple point pour l'initialiser.
+Github GIST est la fonctionnalité qui rendra votre fichier JSON visible publiquement. Rendez-vous sur [https://gist.github.com](https://gist.github.com) pour commencer à le créer en cliquant sur **Create secret gist**. Nommez-le `telmi-store-en`. Ajouter un simple point pour l'initialiser.
 
 ![](assets/gist_01.png)
 
@@ -149,7 +150,7 @@ Deno est un service open-source d'exécution de code Javascript. Nous allons exp
 * Générer le fichier JSON de notre store
 * Pousser ce dernier sur GIST pour forcer son actualisation
 
-Vous pouvez donc commencer par vous authentifier (avec votre compte Github) sur https://console.deno.com/login
+Vous pouvez donc [commencer par vous authentifier sur le site de Deno](https://console.deno.com/login) (avec votre compte Github).
 
 ![](assets/deno_01.png)
 
