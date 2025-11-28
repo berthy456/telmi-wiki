@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Créer un store international - Telmi Wiki</title>
+        <title>Créer un store - Telmi Wiki</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,25 +78,25 @@
                 <a href="../.."
                     class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#🏳️-international-collapse" aria-expanded="false">
-                    🏳️ International
+                    data-bs-toggle="collapse" data-bs-target="#🛍️-stores-collapse" aria-expanded="false">
+                    🛍️ Stores
                 </a>
-                <div class="collapse" id="🏳️-international-collapse">
+                <div class="collapse" id="🛍️-stores-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Créer un store
+        </a>
+    </li>
                             
     <li class="drac-box-ternary">
         <a href="../stores_internationaux/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Stores internationaux
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Créer un store international
         </a>
     </li>
                     </ul>
@@ -106,10 +106,10 @@
                 <a href="../.."
                     class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#🛍️-achats-collapse" aria-expanded="false">
-                    🛍️ Achats
+                    data-bs-toggle="collapse" data-bs-target="#💳-achats-collapse" aria-expanded="false">
+                    💳 Achats
                 </a>
-                <div class="collapse" id="🛍️-achats-collapse">
+                <div class="collapse" id="💳-achats-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
@@ -158,13 +158,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../stores_internationaux/"
+                    <a href="../.."
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../../achats/miyoo_mini_plus/"
+                    <a href="../stores_internationaux/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -201,25 +201,22 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="ouvrir-un-store-international-telmi">Ouvrir un store international Telmi</h1>
-<p>Cette documentation explique en détail comment mettre en production un store Telmi pour héberger des packs d'histoire dans une langue étrangère précise.</p>
+        <p><h1 id="creer-un-store-telmi">Créer un store Telmi</h1>
+<p>Cette documentation explique en détail comment mettre en production un store Telmi pour héberger des packs d'histoire.</p>
 <p>Elle s'adresse donc à vous si :</p>
 <ul>
-<li>Vous êtes bilingue.</li>
-<li>Vous avez la volonté de gérer un store Telmi officiel dans une langue étrangère.</li>
+<li>Vous avez la volonté de gérer et maintenir un store Telmi.</li>
 <li>Vous possédez un compte Github et vous savez comment l'utiliser.</li>
 </ul>
 <p>Vous êtes partant ? Super ! N'hésitez pas à demander de l'aide à la communauté Telmi !</p>
 <h2 id="structure-dun-store-telmi">Structure d'un store Telmi</h2>
 <p>Un store Telmi est basiquement un fichier JSON qui est appelé sur le logiciel Telmi-Sync, ce dernier contient toutes les informations des packs d'histoire. Il est resynchronisé à chaque lancement du logiciel. Votre rôle est donc de faire en sorte que ce fichier JSON soit régulièrement mis à jour et publiquement accessible. Pour cela, deux services sont donc exploités : Github et Deno. Github héberge les histoires, les informations et met à disposition le fichier JSON du store. Deno de son côté, sert uniquement à déclencher la mise à jour quotidienne du fichier JSON.</p>
-<h2 id="la-langue">La langue</h2>
-<p>Pour commencer, identifiez le code <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1">ISO 639-1</a> du pays concerné par votre langue.
-Par exemple "FR", pour la France.</p>
+<h2 id="notre-store-exemple">Notre store exemple</h2>
 <blockquote>
-<p>⚠️ Dans la suite de cette documentation, c'est le code "EN" qui sera pris en exemple, remplacez donc <strong>systématiquement</strong> ce dernier par votre propre code pays ⚠️</p>
+<p>⚠️ Dans la suite de cette documentation, c'est le store <code>telmi-store-en</code> qui sera pris en exemple, remplacez donc <strong>systématiquement</strong> ce dernier par votre propre nom de Store ⚠️</p>
 </blockquote>
 <h2 id="creation-dune-organisation-github">Création d'une organisation Github</h2>
-<p>Identifiez-vous sur Github puis débutez la création d'une organisation avec le nom : <code>telmi-store-en</code></p>
+<p>Identifiez-vous sur Github puis débutez la création d'une organisation avec le nom de votre store.</p>
 <p><img alt="" src="../assets/github_01.png" /></p>
 <p><img alt="" src="../assets/github_02.png" /></p>
 <p>Vous pouvez également ajouter quelques éminents membres de la communauté Telmi en soutient 🤪</p>
@@ -227,9 +224,9 @@ Par exemple "FR", pour la France.</p>
 <p>Commencez à personaliser l'organisation : </p>
 <ul>
 <li>Nom : <code>Telmi Store EN</code></li>
-<li>Une description traduite dans votre langue</li>
+<li>Une description</li>
 <li>Le lien vers <code>https://telmi.fr</code></li>
-<li>Une icône personnalisée avec le drapeau de votre langue, vous pouvez utiliser <a href="../assets/telmi-icon-flag.xcf">ce template XCF</a> avec <a href="https://www.gimp.org">GIMP</a> si besoin pour créer votre icône.</li>
+<li>Une icône personnalisée, vous pouvez utiliser <a href="../assets/telmi-icon-flag.xcf">ce template XCF</a> avec <a href="https://www.gimp.org">GIMP</a> si besoin pour créer votre icône.</li>
 </ul>
 <p><img alt="" src="../assets/github_04.png" /></p>
 <p>Votre organisation est prête, il est temps d'initialiser le premier dépôt <code>.github</code>, c'est un dépôt de configuration spécial.</p>
@@ -263,9 +260,9 @@ git push -u origin main
 </code></pre>
 <p>Une fois votre dépôt <code>.github</code> prêt, nous pouvons passer à la mise en place du fichier GIST.</p>
 <h2 id="mise-en-place-dun-gist">Mise en place d'un GIST</h2>
-<p>Github GIST est la fonctionnalité qui rendra votre fichier JSON visible publiquement. Rendez-vous sur <a href="https://gist.github.com">https://gist.github.com</a> pour commencer à le créer en cliquant sur <strong>Create secret gist</strong>. Nommez-le <code>telmi-store-en</code>. Ajouter un simple point pour l'initialiser.</p>
+<p>Github GIST est la fonctionnalité qui rendra votre fichier JSON visible publiquement. Rendez-vous sur <a href="https://gist.github.com">https://gist.github.com</a> pour commencer à le créer en cliquant sur <strong>Create secret gist</strong>. Nommez-le puis ajouter un simple point pour l'initialiser.</p>
 <p><img alt="" src="../assets/gist_01.png" /></p>
-<p>Un fichier <code>gistfile1.txt</code> est créé, renommez-le <code>telmi-interactive-en.json</code></p>
+<p>Un fichier <code>gistfile1.txt</code> est créé, renommez-le avec un format standardisé comme par exemple <code>telmi-interactive-en.json</code>.</p>
 <p><img alt="" src="../assets/gist_02.png" /></p>
 <p><img alt="" src="../assets/gist_03.png" /></p>
 <p><img alt="" src="../assets/gist_04.png" /></p>
@@ -276,7 +273,7 @@ git push -u origin main
 <p>Ce lien comprend l'ID de votre GIST (ici <code>c2da96666a3a84397f19576d94d15a57</code> dans cet exemple), notez-le précieusement.</p>
 <p>Ainsi, le lien officiel de votre nouveau store sera donc structuré ainsi :</p>
 <p><code>https://gist.githubusercontent.com/heuzef/c2da96666a3a84397f19576d94d15a57/raw/telmi-interactive-en.json</code></p>
-<p>Adaptez ce lien avec votre ID GIST et code pays, vous devriez ainsi pouvoir consulter votre fichier JSON (qui ne contient qu'un point à ce stade). C'est également ce lien, que vous pourrez ajouter sur Telmi-Sync.</p>
+<p>Adaptez ce lien avec votre ID GIST et nom du fichier, vous devriez ainsi pouvoir consulter votre fichier JSON (qui ne contient qu'un point à ce stade). C'est également ce lien, que vous pourrez ajouter sur Telmi-Sync.</p>
 <p>C'est tout bon ? Super ! Nous allons pouvoir commencer la configuration de Deno, qui s'occupera de mettre à jour quotidiennement ce fichier JSON. </p>
 <p>Mais avant cela, il faut lui donner l'autorisation de le faire, nous allons donc créer un Token d'accès dédié. Pour cela, accéder à la gestion de vos Tokens.</p>
 <p><img alt="" src="../assets/gist_06.png" /></p>
@@ -489,9 +486,6 @@ deployctl deploy --prod --project=telmi-store-en --unstable src/main.ts
 <p>Pour terminer, n'oubliez pas d'ajouter une description à votre dépôt, avec le nom du pack d'histoire utilisant la nomenclature des noms de pack (âge, titre, langue), autrement, le script planifié par CRON sur Deno sera en échec.</p>
 <p><img alt="" src="../assets/github_09.png" /></p>
 <p>C'est tout bon, vérifiez bien le lendemain que votre nouveau pack d'histoire est correctement visible sur Telmi-Sync, puis répéter l'opération pour chaque pack d'histoire 💪</p>
-<blockquote>
-<p>⚠️ Soyez prudent concernant les droits d'auteur, aucun pack d'histoire illégal ne doit être mis à disposition du public ⚠️</p>
-</blockquote>
 <hr /></p>
     </article>
 </section>
