@@ -7,10 +7,11 @@ nav:
     - ✨ Accueil: index.md
     - 🛍️ Stores: 
       - Stores internationaux: stores/stores_internationaux.md
+      - Stores privés: wip.md
       - Créer son Store Telmi: stores/creer_son_store_telmi.md
       - Héberger son Store Telmi: stores/heberger_son_store_telmi.md
     - 💳 Achats:
-      - Miyoo Mini Plus : achats/miyoo_mini_plus.md
+      - Miyoo Mini Plus: achats/miyoo_mini_plus.md
       - Carte SD: achats/carte_sd.md
     - 🎭 Cultures:
       - Page en construction : wip.md
