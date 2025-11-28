@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Miyoo Mini Plus - Telmi Wiki</title>
+        <title>Héberger son Store Telmi - Telmi Wiki</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class="
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#🛍️-stores-collapse" aria-expanded="false">
                     🛍️ Stores
@@ -85,7 +85,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../stores/stores_internationaux/"
+        <a href="../stores_internationaux/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Stores internationaux
@@ -93,7 +93,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../stores/creer_son_store_telmi/"
+        <a href="../creer_son_store_telmi/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Créer son Store Telmi
@@ -101,8 +101,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../stores/heberger_son_store_telmi/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Héberger son Store Telmi
         </a>
@@ -112,7 +112,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class=" active 
+                    class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#💳-achats-collapse" aria-expanded="false">
                     💳 Achats
@@ -121,15 +121,15 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../../achats/miyoo_mini_plus/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Miyoo Mini Plus
         </a>
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../carte_sd/"
+        <a href="../../achats/carte_sd/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Carte SD
@@ -246,13 +246,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../../stores/heberger_son_store_telmi/"
+                    <a href="../creer_son_store_telmi/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../carte_sd/"
+                    <a href="../../achats/miyoo_mini_plus/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -289,18 +289,34 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="acheter-une-miyoo-mini-plus">Acheter une Miyoo Mini Plus</h1>
-<p>À ce jour, le meilleur endroit pour acheter une Mini Miyoo Plus est sur AliExpress :</p>
-<p><a href="https://fr.aliexpress.com/w/wholesale-miyoo-mini-plus.html">https://fr.aliexpress.com/w/wholesale-miyoo-mini-plus.html</a></p>
+        <p><h1 id="heberger-son-store-telmi">Héberger son Store Telmi</h1>
+<p>Cette documentation explique en détail comment héberger son store Telmi en auto-hebergement.</p>
+<p>Elle s'adresse donc à vous si :</p>
 <ul>
-<li>Restez à l'affût sur Discord, nous communiquons souvent lorsqu'il y a des promos agressives.</li>
-<li>La fourchette de prix varie entre 30€ et 60€ avec les frais de port.</li>
-<li>La livraison peut prendre plusieurs semaines dans certains cas.</li>
-<li>Astuce : commandez une coque en silicone pour quelques € de plus.</li>
-<li>Parfois, des cartes SD et de lecteur de carte SD sont fournit avec la Miyoo : <strong>jettez-les directement à la poubelle !</strong></li>
+<li>Vous avez la volonté de gérer et maintenir un store Telmi.</li>
+<li>Vous possédez un serveur.</li>
+<li>Vous savez utiliser Docker.</li>
 </ul>
-<p>Vous avez aussi l'option de passer par la boutique officiel, mais le prix est en moyenne triplé pour la même chose :</p>
-<p><a href="https://www.miyoominiofficial.com/products/retro-gaming-miyoo-mini-plus-gaming-white?variant=51928440668496">https://www.miyoominiofficial.com/products/retro-gaming-miyoo-mini-plus-gaming-white?variant=51928440668496</a></p></p>
+<p>Le projet <strong>Telmi-Store</strong> initié par Jordan.Deroubaix est disponible ici : <a href="https://github.com/jordanderoubaix/Telmi-store">https://github.com/jordanderoubaix/Telmi-store</a></p>
+<p>Il est possible d'utiliser cette image avec cette configuration Docker-Compose :</p>
+<pre><code>services:
+  telmi-store:
+    image: jordanderoubaix/telmi-store:latest
+    ports:
+      - 80:8888
+    environment:
+      TARGET_URL: https://stories.domain.tld
+      BANNER_IMAGE: https://raw.githubusercontent.com/jordanderoubaix/Telmi-store/refs/heads/main/img/banner-custom-telmi-store.png
+      BANNER_LINK: https://discord.gg/ZTA5FyERbg
+      BANNER_BACKGROUND: &quot;#2e144b&quot;
+      API_KEY: &quot;1234567890&quot;
+      REQUEST_SCHEME: https
+      LOG_LEVEL: DEBUG
+    volumes:
+      - /telmiLibrary:/mnt/nfs/telmiLibrary
+    restart: unless-stopped
+</code></pre>
+<p>Avec cette configuration, l'URL à saisir dans telmi Sync sera : <code>https://stories.heuzef.com/store?api_key=1234567890</code></p></p>
     </article>
 </section>
             <!-- endblock -->
