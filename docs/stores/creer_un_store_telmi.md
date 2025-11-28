@@ -21,31 +21,31 @@ Un store Telmi est basiquement un fichier JSON qui est appelé sur le logiciel T
 
 Identifiez-vous sur Github puis débutez la création d'une organisation avec le nom de votre store.
 
-![](assets/github_01.png)
+![](assets/img/github_01.png)
 
 
-![](assets/github_02.png)
+![](assets/img/github_02.png)
 
 Vous pouvez également ajouter quelques éminents membres de la communauté Telmi en soutient 🤪
 
-![](assets/github_03.png)
+![](assets/img/github_03.png)
 
 Commencez à personaliser l'organisation : 
 
 * Nom : `Telmi Store EN`
 * Une description
 * Le lien vers `https://telmi.fr`
-* Une icône personnalisée, vous pouvez utiliser [ce template XCF](assets/telmi-icon-flag.xcf) avec [GIMP](https://www.gimp.org) si besoin pour créer votre icône.
+* Une icône personnalisée, vous pouvez utiliser [ce template XCF](assets/files/telmi-icon-flag.xcf) avec [GIMP](https://www.gimp.org) si besoin pour créer votre icône.
 
-![](assets/github_04.png)
+![](assets/img/github_04.png)
 
 Votre organisation est prête, il est temps d'initialiser le premier dépôt `.github`, c'est un dépôt de configuration spécial.
 
-![](assets/github_05.png)
+![](assets/img/github_05.png)
 
 Ajoutez ce dernier en accès public.
 
-![](assets/github_06.png)
+![](assets/img/github_06.png)
 
 Ce store doit être initialisé avec quelques fichiers, dossier et surtout la bannière traduite dans votre langue. Pour faire ceci, reprenez la structure des dépôts existants, par exemple : 
 
@@ -55,11 +55,11 @@ Ce store doit être initialisé avec quelques fichiers, dossier et surtout la ba
 
 etc ...
 
-Pour concevoir la bannière, vous pouvez utiliser [ce template XCF](assets/banner-telmi.xcf) avec [GIMP](https://www.gimp.org) si besoin pour la concevoir.
+Pour concevoir la bannière, vous pouvez utiliser [ce template XCF](assets/files/banner-telmi.xcf) avec [GIMP](https://www.gimp.org) si besoin pour la concevoir.
 
-![](assets/gimp_01.png)
+![](assets/img/gimp_01.png)
 
-![](assets/gimp_02.png)
+![](assets/img/gimp_02.png)
 
 Voici quelques instructions pour vous aidez à initialiser ce dépôt :
 
@@ -85,19 +85,19 @@ Une fois votre dépôt ``.github`` prêt, nous pouvons passer à la mise en plac
 
 Github GIST est la fonctionnalité qui rendra votre fichier JSON visible publiquement. Rendez-vous sur [https://gist.github.com](https://gist.github.com) pour commencer à le créer en cliquant sur **Create secret gist**. Nommez-le puis ajouter un simple point pour l'initialiser.
 
-![](assets/gist_01.png)
+![](assets/img/gist_01.png)
 
 Un fichier `gistfile1.txt` est créé, renommez-le avec un format standardisé comme par exemple `telmi-interactive-en.json`.
 
-![](assets/gist_02.png)
+![](assets/img/gist_02.png)
 
-![](assets/gist_03.png)
+![](assets/img/gist_03.png)
 
-![](assets/gist_04.png)
+![](assets/img/gist_04.png)
 
 C'est prêt ! Récupérez l'URL publique en cliquant sur **Share**.
 
-![](assets/gist_05.png)
+![](assets/img/gist_05.png)
 
 Votre lien URL ressemblera à quelque chose comme ceci :
 
@@ -115,11 +115,11 @@ C'est tout bon ? Super ! Nous allons pouvoir commencer la configuration de Deno,
 
 Mais avant cela, il faut lui donner l'autorisation de le faire, nous allons donc créer un Token d'accès dédié. Pour cela, accéder à la gestion de vos Tokens.
 
-![](assets/gist_06.png)
+![](assets/img/gist_06.png)
 
-![](assets/gist_07.png)
+![](assets/img/gist_07.png)
 
-![](assets/gist_08.png)
+![](assets/img/gist_08.png)
 
 Vous pouvez directement commencer la création de votre Token via ce lien : [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 
@@ -127,7 +127,7 @@ Donnez-lui un nom parlant, par exemple `telmi-store-gists` et surtout spécifiez
 
 Finalement, pour les permissions (Select scopes), spécifiez uniquement l'accès à **gist**.
 
-![](assets/gist_09.png)
+![](assets/img/gist_09.png)
 
 À la création, le Token apparaîtra en clair, **notez-le précieusement**, car vous n'aurez plus accès à ce dernier après. 
 
@@ -148,7 +148,7 @@ Deno est un service open-source d'exécution de code Javascript. Nous allons exp
 
 Vous pouvez donc [commencer par vous authentifier sur le site de Deno](https://console.deno.com/login) (avec votre compte Github).
 
-![](assets/deno_01.png)
+![](assets/img/deno_01.png)
 
 Installez ensuite Deno sur votre machine : 
 
@@ -334,11 +334,11 @@ deployctl deploy --prod --project=telmi-store-en --unstable src/main.ts
 
 Une demande d'autorisation est demandée pour poursuivre.
 
-![](assets/deno_02.png)
+![](assets/img/deno_02.png)
 
 Si le déploiement réussis, vous devriez avoir un service accessible sur un domaine comme par exemple : `https://telmi-store-en.deno.dev` , mais également un fichier `deno.json` créé par le déploiement.
 
-![](assets/deno_03.png)
+![](assets/img/deno_03.png)
 
 Finalement, RDV sur [https://dash.deno.com](https://dash.deno.com) pour visualiser l'état de l'exécution du script par CRON. Le statut "Last Run" doit indiquer "Succeeded".
 
@@ -352,7 +352,7 @@ Donc c'est parti mon Telmi, retournons sur notre organisation Github, pour crée
 
 Chaque dépôt est structuré très précisément, donc soyez très rigoureux, mais globalement, vous y retrouverez la même logique de structure avec quelques fichiers à modifier.
 
-![](assets/github_07.png)
+![](assets/img/github_07.png)
 
 Puis, une fois votre dépôt prêt, vous pourrez créer une "Realease" dans le menu du même nom, qui contiendra votre pack d'histoire au format **ZIP**.
 
@@ -361,11 +361,11 @@ Puis, une fois votre dépôt prêt, vous pourrez créer une "Realease" dans le m
 * Ajouter la description, attention au format du contenu, c'est ce dernier qui est analysé sur le store
 * Ajouter enfin le pack d'histoire au format **ZIP**
 
-![](assets/github_08.png)
+![](assets/img/github_08.png)
 
 Pour terminer, n'oubliez pas d'ajouter une description à votre dépôt, avec le nom du pack d'histoire utilisant la nomenclature des noms de pack (âge, titre, langue), autrement, le script planifié par CRON sur Deno sera en échec.
 
-![](assets/github_09.png)
+![](assets/img/github_09.png)
 
 C'est tout bon, vérifiez bien le lendemain que votre nouveau pack d'histoire est correctement visible sur Telmi-Sync, puis répéter l'opération pour chaque pack d'histoire 💪
 
