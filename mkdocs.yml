@@ -6,11 +6,19 @@ copyright: Telmi Interactive
 nav:
     - ✨ Accueil: index.md
     - 🛍️ Stores: 
-      - Créer un store : stores/creer_un_store_telmi.md
-      - Stores internationaux : stores/stores_internationaux.md
-    - 💳 Achats :
+      - Stores internationaux: stores/stores_internationaux.md
+      - Créer un store: stores/creer_un_store_telmi.md
+    - 💳 Achats:
       - Miyoo Mini Plus : achats/miyoo_mini_plus.md
-      - Carte SD : achats/carte_sd.md
+      - Carte SD: achats/carte_sd.md
+    - 🎭 Cultures:
+      - Accueil: index.md
+    - 🪄 Créations:
+      - Accueil: index.md
+    - 🪛 Bricolages:
+      - Accueil: index.md
+    - 🚀 Developments:
+      - Accueil: index.md
 
 theme:
   name: dracula
