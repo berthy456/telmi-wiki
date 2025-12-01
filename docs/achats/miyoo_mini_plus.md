@@ -24,4 +24,4 @@ N'hésitez pas aussi à acheter des Miyoo Mini Plus hors service, car cela peut 
 
 
 * [Leboncoin](https://www.leboncoin.fr/recherche?text=Miyoo%20Mini%20Plus&shippable=1&transaction_status=search__no_value)
-* [Vinted] https://www.vinted.fr/catalog?search_text=Miyoo+Mini+Plus
+* [Vinted](https://www.vinted.fr/catalog?search_text=Miyoo+Mini+Plus)
