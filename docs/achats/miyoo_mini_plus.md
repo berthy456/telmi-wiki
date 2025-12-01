@@ -16,14 +16,12 @@
 
 Une autre astuce pour obtenir une Miyoo Mini Plus, c'est le marché de l'occasion.
 
-Vinted et Leboncoin sont très utilisées pour ceci et peut-être idéal si vous avez un petit budget.
+Vinted et Leboncoin sont très utilisées par exemple pour ceci et peut-être idéal si vous avez un petit budget.
 
 Comptez 30€ maximum, frais de port inclus.
 
 N'hésitez pas aussi à acheter des Miyoo Mini Plus hors service, car cela peut vous offrir des pièces de rechange pour la réparer !
 
 
-https://www.leboncoin.fr/recherche?text=Miyoo%20Mini%20Plus&shippable=1&transaction_status=search__no_value
-
-
-https://www.vinted.fr/catalog?search_text=Miyoo+Mini+Plus
+* [Leboncoin](https://www.leboncoin.fr/recherche?text=Miyoo%20Mini%20Plus&shippable=1&transaction_status=search__no_value)
+* [Vinted] https://www.vinted.fr/catalog?search_text=Miyoo+Mini+Plus
