@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Installation manuel TelmiOS sur MacOS - Telmi Wiki</title>
+        <title>Installation manuel TelmiOS sur Linux - Telmi Wiki</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -217,26 +217,10 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../installation_manuel_telmios_sur_linux/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Installation manuel TelmiOS sur Linux
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
         <a href="./"
             class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Installation manuel TelmiOS sur MacOS
-        </a>
-    </li>
-                            
-    <li class="drac-box-ternary">
-        <a href="../installation_manuel_telmios_sur_windows/"
-            class="
-            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Installation manuel TelmiOS sur Windows
+            Installation manuel TelmiOS sur Linux
         </a>
     </li>
                     </ul>
@@ -270,14 +254,14 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../installation_manuel_telmios_sur_linux/"
+                    <a href="../../bricolages/details_techniques_de_la_miyoo_mini_plus/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../installation_manuel_telmios_sur_windows/"
-                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -313,8 +297,34 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="installation-manuel-telmios-sur-macos">Installation manuel TelmiOS sur MacOS</h1>
-<p>(Page en construction 🚧)</p></p>
+        <p><h1 id="installation-manuelle-de-telmios-sur-linux">Installation manuelle de TelmiOS sur Linux</h1>
+<p>Pour s'assurer du bon fonctionnement du logiciel, il faudra formater cette carte au format "FAT32".</p>
+<p>Lancer un terminal puis afficher la liste des disques et leur partitions :</p>
+<pre><code>fdisk -l
+</code></pre>
+<p>Identifiez la carte SD et sa ou ses partitions (quelque chose comme <code>/dev/sdX</code>, mais attention <strong>soyez certain de bien repérer votre carte SD avant d'aller plus loin !</strong> ).</p>
+<p>Démontez la ou les partitions avant de faire les prochaines actions de modification :</p>
+<pre><code>unmount /dev/sdX
+</code></pre>
+<p>On peut partitionner le disque en utilisant fdisk, bien suivre les indications et ne confirmer <strong>que si vous êtes sur(e)s de vous</strong></p>
+<pre><code>fdisk /dev/sdX
+# Puis choix n ; p ; 1 ; t ; b ; w
+</code></pre>
+<p>Maintenant il faut formater la partition créé :</p>
+<pre><code>mkfs.fat -F32 -n &quot;Telmi&quot; /dev/sdX
+</code></pre>
+<blockquote>
+<p>Le script de formatage intégré à TelmiSync, pour Linux, réalise justement le formatage en FAT32 avec la commande <code>mkfs.fat -F32 -n "$volumeName" "$device"</code>.</p>
+</blockquote>
+<p>Bravo, vous avez une carte SD toute prête, il ne reste plus qu'à copier les répertoires et fichiers de Telmi OS dessus !</p>
+<p>La dernière version est disponible <a href="https://github.com/DantSu/Telmi-story-teller/releases/latest">ICI</a>, récupérez le fichier ZIP complet, et copier son contenu sur la carte SD.</p>
+<pre><code>wget https://github.com/DantSu/Telmi-story-teller/releases/download/X.X.X/TelmiOS_vX.X.X.zip
+unzip TelmiOS_vX.X.X.zip -d /dev/sdX/
+ls -a /dev/sdX/
+</code></pre>
+<blockquote>
+<p>Assurez-vous bien que les repertoires et fichiers cachés soient bien copiés (<code>.tmp_update, etc ...</code>)</p>
+</blockquote></p>
     </article>
 </section>
             <!-- endblock -->
