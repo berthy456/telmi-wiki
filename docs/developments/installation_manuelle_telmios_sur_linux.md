@@ -31,7 +31,7 @@ mkfs.fat -F32 -n "Telmi" /dev/sdX
 
 > Le script de formatage intégré à TelmiSync, pour Linux, réalise justement le formatage en FAT32 avec la commande ``mkfs.fat -F32 -n "$volumeName" "$device"``.
 
-Bravo, vous avez une carte SD toute prête, il ne reste plus qu'à copier les répertoires et fichiers de Telmi OS dessus !
+Bravo, vous avez une carte SD toute prête, il ne reste plus qu'à copier les répertoires et fichiers de TelmiOS dessus !
 
 La dernière version est disponible [ICI](https://github.com/DantSu/Telmi-story-teller/releases/latest), récupérez le fichier ZIP complet, et copier son contenu sur la carte SD.
 
