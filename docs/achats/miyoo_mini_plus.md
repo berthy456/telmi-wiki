@@ -10,7 +10,7 @@
 * La fourchette de prix varie entre 30€ et 60€ avec les frais de port.
 * La livraison peut prendre plusieurs semaines dans certains cas.
 * Astuce : commandez une coque en silicone pour quelques € de plus.
-* Attention : Parfois, des cartes SD douteuses et des lecteurs de carte SD sont fournit avec la Miyoo : **jettez-les directement dans une poubelle de tri sélectif !**
+* Attention : Parfois, des cartes MicroSD douteuses et des lecteurs de sont fournit avec la Miyoo : **jettez-les directement dans une poubelle de tri sélectif !**
 
 ## Acheter de l'occasion
 
