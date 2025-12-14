@@ -303,7 +303,7 @@ const githubToTelmi = async (gist, filename, repoURI, banner, background, link) 
         {
             method: 'PATCH',
             headers: {
-                Authorization: 'Bearer github_pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+                Authorization: 'Bearer github_pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', # Ajouter le Token ici
                 Accept: 'application/vnd.github+json',
                 'X-GitHub-Api-Version': '2022-11-28',
             },
@@ -317,13 +317,13 @@ const githubToTelmi = async (gist, filename, repoURI, banner, background, link) 
     )
 }
 
-
+# Adapter le code suivant à votre store
 Deno.cron('telmi-interactive-en', '0 1,13 * * *', async () => {
     await githubToTelmi('c2da96666a3a84397f19576d94d15a57', 'telmi-interactive-en.json', 'telmi-store-en', 'https://raw.githubusercontent.com/telmi-store-en/.github/master/profile/banner-telmi.jpg', '#2e144b', 'https://discord.gg/ZTA5FyERbg')
 })
 ```
 
-**Adaptez ce fichier pour indiquer le Token (Ligne "Authorization"), l'ID GIST et le Code pays sur les dernières lignes du script.**
+**Adaptez ce fichier pour indiquer le Token (Ligne "Authorization"), l'ID GIST et les dernières lignes du script.**
 
 Maintenant que votre fichier `main.ts` est prêt, nous pouvons effectuer le déploiement sur Deno :
 
