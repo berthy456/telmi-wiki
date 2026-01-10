@@ -14,20 +14,26 @@
   Telmi-OS a été conçu pour remplacer l'OS des consoles de retro-gaming Miyoo mini et Miyoo mini plus, fonctionnant sous Linux ( OnionOS  https://github.com/OnionUI/Onion) 
   TelmiOS est écrit en C
   
+ https://github.com/DantSu/Telmi-story-teller/tree/main/src/storyTeller
+  
   Il comporte donc un lecteur, la navigation et une gestion des formats d'histoires interactives ( inventaires, etc..).
 
  * **Le lecteur:**
-    WIP
+   StoryTeller utilise "musicplayer" le lecteur embarque dans onionOS.
+   Base sur WIP voir src/storyTeller/music_player.h
  * **La selection des histoires:**
+   Voir src/storyTeller/app_selector.h
     WIP
  * **Le format Studio et Telmi:** 
+   La partie du code peut etre la plus importante, la lecture du fichier Json de l'histoire et la gestion du deroule de celle-ci..
+   Voir src/storyTeller/stories_reader.h
     WIP
 ## Architecture Miyoo/ Onion OS
 
 La Miyoo mini est basée sur l'architecture **ARMv7** ( 32bits)
 WIP
 
-Sous Onion OS, l'affichage est géré par la bibliothèque SDL (v1.2)
+Sous Onion OS, l'affichage est géré par la bibliothèque SDL (v2) 
 WIP
 
 ## Développement
@@ -44,4 +50,4 @@ Une procédure est également disponible dans la documentation OnionOs https://o
 WIP
 
 ## Compilation pour une VM
-WP
+WiP
