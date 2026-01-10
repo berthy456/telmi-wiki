@@ -1,5 +1,5 @@
  # *Telmi Story Teller* 
-   *Cette page, indépendante de DantSu, le développeur de Telmi, tente de regrouper des informations sur ce logiciel pour éventuellement contribuer à son développement, favoriser son portage sur d'autres plateformes..*
+   *Cette page tente de regrouper des informations sur ce logiciel pour éventuellement contribuer à son développement, favoriser son portage sur d'autres plateformes..*
 
 ## Description 
   **Telmi OS**, ou **Telmi Story Teller**, est disponible ici : https://github.com/DantSu/Telmi-story-teller
