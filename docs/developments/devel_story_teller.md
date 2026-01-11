@@ -21,8 +21,10 @@
  La gestion des formats d'histoires interactives ( inventaires, etc..).
  
   La partie du code peut être la plus importante, la lecture du fichier Json de l'histoire et la gestion du déroulé de celle-ci..
+  
    Voir src/storyTeller/[stories_reader.h](https://github.com/DantSu/Telmi-story-teller/blob/main/src/storyTeller/stories_reader.h)
-   Voir aussi [cette documentation ](Telmi_story_format.md) (générée par IA)
+   
+   Voir aussi [cette documentation ](telmi_story_format.md) (générée par IA)
 
 ## Architecture Miyoo/ Onion OS
 
