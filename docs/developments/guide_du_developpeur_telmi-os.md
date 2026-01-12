@@ -1,6 +1,6 @@
- # Guide du developpeur Telmi-OS
+# Guide du developpeur Telmi-OS
 
-> Cette page tente de regrouper des informations sur ce logiciel pour éventuellement contribuer à son développement, favoriser son portage sur d'autres plateformes..
+> Cette page tente de regrouper des informations sur ce logiciel pour éventuellement contribuer à son développement, favoriser son portage sur d'autres plateformes ...
 
 ## Description 
   **Telmi OS**, ou **Telmi Story Teller** a été conçu pour remplacer l'OS des consoles de retro-gaming Miyoo mini et Miyoo mini plus, fonctionnant sous Linux ( [OnionOS](https://github.com/OnionUI/Onion)  ) 
@@ -74,4 +74,4 @@ Son nom interne est "arm-linux-gnueabihf" donc compatible ArmHF
 
 Une toolchain est aussi disponible ici https://github.com/shauninman/union-miyoomini-toolchain
 
-Une procédure est également disponible dans la documentation OnionOs https://onionui.github.io/docs/dev/setup
+[Une procédure est également disponible dans la documentation OnionOS](https://onionui.github.io/docs/dev/setup)
