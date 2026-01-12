@@ -1,9 +1,9 @@
-# Guide du developpeur Telmi-OS
+# Guide du developpeur Telmi OS
 
 > Cette page tente de regrouper des informations sur ce logiciel pour éventuellement contribuer à son développement, favoriser son portage sur d'autres plateformes ...
 
 ## Description 
-  **Telmi OS**, ou **Telmi Story Teller** a été conçu pour remplacer l'OS des consoles de retro-gaming Miyoo mini et Miyoo mini plus, fonctionnant sous Linux ( [OnionOS](https://github.com/OnionUI/Onion)  ) 
+  **Telmi OS**, ou **Telmi Story Teller** a été conçu pour remplacer l'OS des consoles de retro-gaming Miyoo mini et Miyoo mini plus, fonctionnant sous Linux ([OnionOS](https://github.com/OnionUI/Onion)  ) 
   TelmiOS est écrit en C par DantSu sous licence GPLv3, son code est disponible [ici](https://github.com/DantSu/Telmi-story-teller/tree/main/src/storyTeller).
   
   Il se compose de 3 parties principales:

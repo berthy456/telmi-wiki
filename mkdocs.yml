@@ -22,10 +22,10 @@ nav:
       - Détails techniques de la Miyoo Mini Plus: bricolages/details_techniques_de_la_miyoo_mini_plus.md
   - 🚀 Developments:
       - Astuces Telmi-Sync: developments/astuces_telmi_sync.md
-      - Installation manuelle TelmiOS sur Linux: developments/installation_manuelle_telmios_sur_linux.md
-      - Installation manuelle TelmiOS sur Windows: developments/installation_manuelle_telmios_sur_windows.md
-      - Guide du developpeur Telmi-OS: developments/guide_du_developpeur_telmi-os.md
-      - Documentation du format des histoires Telmi: developments/documentation_du_format_des_histoires_telmi.md
+      - Installation manuelle Telmi OS sur Linux: developments/installation_manuelle_telmi_os_sur_linux.md
+      - Installation manuelle Telmi OS sur Windows: developments/installation_manuelle_telmi_os_sur_windows.md
+      - Guide du developpeur Telmi OS: developments/guide_du_developpeur_telmi_os.md
+      - Documentation du format des histoires: developments/documentation_du_format_des_histoires.md
 
 theme:
   name: dracula
