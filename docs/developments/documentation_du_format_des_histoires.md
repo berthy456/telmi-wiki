@@ -1,6 +1,6 @@
 # Faire des histoires interactives compatible Studio de Telmi-Sync
 
-## Telmi Story Format
+## Format d'une histoire
 
 ### Folder Structure
 
