@@ -25,7 +25,7 @@ nav:
       - Installation manuelle TelmiOS sur Linux: developments/installation_manuelle_telmios_sur_linux.md
       - Installation manuelle TelmiOS sur Windows: developments/installation_manuelle_telmios_sur_windows.md
       - Guide du developpeur Telmi-OS: developments/guide_du_developpeur_telmi-os.md
-      - Documentation du format des histoires telmi: developments/documentation_du_format_des_histoires_telmi.md
+      - Documentation du format des histoires Telmi: developments/documentation_du_format_des_histoires_telmi.md
 
 theme:
   name: dracula
