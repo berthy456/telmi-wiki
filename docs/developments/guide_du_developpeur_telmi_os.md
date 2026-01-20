@@ -1,7 +1,9 @@
 # Guide du developpeur Telmi OS
 
 Cette page est un point de depart pour contribuer au développement de Telmi Os.
-Une documentation et des aides pour le portage sur d'autres plateformes sont en cours.. WIP
+Une base pour le portage sur d'autres plateformes et tout autre projet autour de Telmi.. 
+
+WIP
 
 > Pour toute question concernant le développement de Telmi et de Story Teller, vous êtes bienvenus sur le canal dédié "développement" du [serveur Discord](https://discord.gg/ZTA5FyERbg)! 
 
@@ -76,6 +78,6 @@ Son nom interne est "arm-linux-gnueabihf" donc compatible ArmHF
     TOOLCHAIN := aemiii91/miyoomini-toolchain:latest
     
 
-Une toolchain est aussi disponible ici https://github.com/shauninman/union-miyoomini-toolchain
+Une toolchain est aussi [disponible ici](https://github.com/shauninman/union-miyoomini-toolchain)
 
 [Une procédure est également disponible dans la documentation OnionOS](https://onionui.github.io/docs/dev/setup)
